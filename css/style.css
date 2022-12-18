@@ -213,6 +213,7 @@ body {
 }
 
 .main {
+  position: relative;
   margin-bottom: 70px;
 }
 
@@ -285,6 +286,38 @@ body {
 
 .main__ingredient:last-child {
   margin-bottom: 0;
+}
+
+.main__pepper1-bg {
+  position: absolute;
+  z-index: -1;
+  top: 130px;
+  left: 425px;
+  width: 208px;
+}
+
+.main__pepper2-bg {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: -90px;
+  width: 165px;
+}
+
+.main__plane-bg {
+  position: absolute;
+  z-index: -1;
+  top: -100px;
+  left: 340px;
+  width: 607px;
+}
+
+.main__chips-bg {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: -155px;
+  width: 215px;
 }
 
 .add-to-cart-button {
