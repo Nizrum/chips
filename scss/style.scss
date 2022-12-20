@@ -189,7 +189,7 @@ body {
         position: absolute;
         z-index: -1;
         top: 130px;
-        left: 425px;
+        left: 32%;
         width: 208px;
     }
 
@@ -525,5 +525,103 @@ body {
 
     &_active {
         display: flex;
+    }
+}
+
+@media (max-width: 1439px) {
+    
+    .container {
+        width: 1100px;
+    }
+
+    .header {
+        margin-top: 30px;
+    }
+
+    .main {
+
+        &__content {
+            width: 420px;
+        }
+
+        &__title {
+            font-size: 64px;
+            line-height: 80px;
+        }
+
+        &__subtitle {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
+        &__image {
+            height: 450px;
+        }
+
+        &__buttons {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+        &__amount-buttons {
+            margin-bottom: 20px;
+        }
+
+        &__pepper1-bg {
+            width: 150px;
+            top: 50px;
+            left: 30%;
+        }
+
+        &__pepper2-bg {
+            width: 100px;
+            bottom: -70px;
+        }
+
+        &__plane-bg {
+            width: 400px;
+            left: 430px;
+        }
+
+        &__chips-bg {
+            width: 160px;
+        }
+    }
+
+    .ingredient {
+        width: 160px;
+
+        &__text {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .other {
+
+        &__wrapper {
+            padding: 20px 50px;
+        }
+
+        &__list {
+            width: 99%;
+        }
+    }
+
+    .more-button {
+
+        &__image {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .product {
+
+        &__text {
+            width: 220px;
+            transform: translateX(-40px);
+        }
     }
 }

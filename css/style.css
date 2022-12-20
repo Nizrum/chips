@@ -292,7 +292,7 @@ body {
   position: absolute;
   z-index: -1;
   top: 130px;
-  left: 425px;
+  left: 32%;
   width: 208px;
 }
 
@@ -624,4 +624,72 @@ body {
 
 .cart_active {
   display: flex;
+}
+
+@media (max-width: 1439px) {
+  .container {
+    width: 1100px;
+  }
+  .header {
+    margin-top: 30px;
+  }
+  .main__content {
+    width: 420px;
+  }
+  .main__title {
+    font-size: 64px;
+    line-height: 80px;
+  }
+  .main__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .main__image {
+    height: 450px;
+  }
+  .main__buttons {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .main__amount-buttons {
+    margin-bottom: 20px;
+  }
+  .main__pepper1-bg {
+    width: 150px;
+    top: 50px;
+    left: 30%;
+  }
+  .main__pepper2-bg {
+    width: 100px;
+    bottom: -70px;
+  }
+  .main__plane-bg {
+    width: 400px;
+    left: 430px;
+  }
+  .main__chips-bg {
+    width: 160px;
+  }
+  .ingredient {
+    width: 160px;
+  }
+  .ingredient__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .other__wrapper {
+    padding: 20px 50px;
+  }
+  .other__list {
+    width: 99%;
+  }
+  .more-button__image {
+    width: 50px;
+    height: 50px;
+  }
+  .product__text {
+    width: 220px;
+    transform: translateX(-40px);
+  }
 }
