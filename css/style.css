@@ -112,7 +112,15 @@ h6 {
   font-weight: 700;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #F7EFED;
   font-family: 'Gilroy', sans-serif;
 }
@@ -732,5 +740,92 @@ body {
   }
   .product:last-child {
     display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 700px;
+  }
+  .header__cart-button {
+    margin-right: 25px;
+  }
+  .logo__image {
+    width: 120px;
+  }
+  .menu__item {
+    margin: 0 16px;
+  }
+  .menu__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .main__content {
+    width: 300px;
+    margin-right: 0;
+  }
+  .main__title {
+    font-size: 48px;
+    line-height: 64px;
+  }
+  .main__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .main__amount-buttons {
+    margin-bottom: 15px;
+  }
+  .main__image {
+    height: 340px;
+  }
+  .main__ingredient {
+    margin-bottom: 35px;
+  }
+  .main__pepper1-bg {
+    width: 100px;
+    left: 33%;
+  }
+  .main__pepper2-bg {
+    bottom: -90px;
+  }
+  .main__plane-bg {
+    display: none;
+  }
+  .change-amount-button {
+    width: 50px;
+    height: 50px;
+  }
+  .amount-counter {
+    padding: 6px;
+  }
+  .amount-counter__inner {
+    width: 50px;
+    height: 50px;
+  }
+  .add-to-cart-button__image {
+    padding: 12px;
+    margin-right: 20px;
+  }
+  .add-to-cart-button__img {
+    height: 24px;
+  }
+  .add-to-cart-button__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .ingredient {
+    flex-direction: column-reverse;
+    width: 80px;
+  }
+  .ingredient__image {
+    margin-bottom: 10px;
+  }
+  .other__wrapper {
+    padding: 20px 40px;
+  }
+  .other__list {
+    width: 85%;
+    overflow: hidden;
   }
 }
