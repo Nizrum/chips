@@ -146,69 +146,12 @@ body {
   align-items: center;
 }
 
-.header__search-button {
-  margin-right: 18px;
-  position: relative;
-}
-
-.header__search-button::after {
-  position: absolute;
-  right: -9px;
-  content: '';
-  width: 2px;
-  height: 46px;
-  background-color: #000;
-}
-
 .header__cart-button {
-  margin-right: 35px;
+  margin-right: 15px;
 }
 
 .logo__image {
   width: 190px;
-}
-
-.menu__list {
-  display: flex;
-  align-items: center;
-}
-
-.menu__item {
-  margin: 0 25px;
-}
-
-.menu__item:first-child {
-  margin-left: 0;
-}
-
-.menu__item:last-child {
-  margin-right: 0;
-}
-
-.menu__link {
-  position: relative;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.menu__link:after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 50%;
-  height: 2px;
-  width: 0;
-  background-color: #000;
-  transition: all 0.2s;
-  transform: translateX(-50%);
-}
-
-.menu__link:hover:after {
-  width: 100%;
 }
 
 .icon-button {
@@ -218,6 +161,43 @@ body {
   width: 40px;
   height: 40px;
   background-color: transparent;
+}
+
+.search {
+  position: relative;
+  width: 300px;
+}
+
+.search__input {
+  width: 100%;
+  padding: 12px 50px 12px 20px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.search__input::placeholder {
+  color: #000;
+}
+
+.search__input:focus::placeholder {
+  opacity: 0;
+}
+
+.search__button {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.search__button img {
+  width: 30px;
+  height: 30px;
 }
 
 .main {
@@ -747,19 +727,12 @@ body {
   .container {
     width: 700px;
   }
-  .header__cart-button {
-    margin-right: 25px;
-  }
   .logo__image {
     width: 120px;
   }
-  .menu__item {
-    margin: 0 16px;
-  }
-  .menu__link {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
+  .search__input {
+    font-size: 20px;
+    line-height: 22px;
   }
   .main__content {
     width: 300px;
@@ -834,6 +807,9 @@ body {
   .container {
     width: 500px;
   }
+  .search {
+    width: 200px;
+  }
   .main__wrapper {
     flex-wrap: wrap;
   }
@@ -849,9 +825,6 @@ body {
     height: 360px;
   }
   .main__pepper1-bg {
-    display: none;
-  }
-  .menu {
     display: none;
   }
   .ingredient {

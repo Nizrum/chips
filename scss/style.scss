@@ -34,22 +34,8 @@ body {
         align-items: center;
     }
 
-    &__search-button {
-        margin-right: 18px;
-        position: relative;
-
-        &::after {
-            position: absolute;
-            right: -9px;
-            content: '';
-            width: 2px;
-            height: 46px;
-            background-color: #000;
-        }
-    }
-
     &__cart-button {
-        margin-right: 35px;
+        margin-right: 15px;
     }
 }
 
@@ -60,55 +46,6 @@ body {
     }
 }
 
-.menu {
-
-    &__list {
-        display: flex;
-        align-items: center;
-    }
-
-    &__item {
-        margin: 0 25px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-
-    &__link {
-        position: relative;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 22px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #000000;
-
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: -1px;
-            left: 50%;
-            height: 2px;
-            width: 0;
-            background-color: #000;
-            transition: all 0.2s;
-            transform: translateX(-50%);
-        }
-
-        &:hover {
-
-            &:after {
-                width: 100%;
-            }
-        }
-    }
-}
-
 .icon-button {
     display: flex;
     align-items: center;
@@ -116,6 +53,45 @@ body {
     width: 40px;
     height: 40px;
     background-color: transparent;
+}
+
+.search {
+    position: relative;
+    width: 300px;
+
+    &__input {
+        width: 100%;
+        padding: 12px 50px 12px 20px;
+        background-color: transparent;
+        border: 2px solid #000;
+        border-radius: 40px;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+
+        &::placeholder {
+            color: #000;
+        }
+
+        &:focus {
+            &::placeholder {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__button {
+        background-color: transparent;
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
 }
 
 .main {
@@ -704,13 +680,6 @@ body {
         width: 700px;
     }
 
-    .header {
-
-        &__cart-button {
-            margin-right: 25px;
-        }
-    }
-
     .logo {
 
         &__image {
@@ -718,16 +687,11 @@ body {
         }
     }
 
-    .menu {
+    .search {
 
-        &__item {
-            margin: 0 16px;
-        }
-
-        &__link {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 20px;
+        &__input {
+            font-size: 20px;
+            line-height: 22px;
         }
     }
 
@@ -828,13 +792,17 @@ body {
 }
 
 @media (max-width: 767px) {
-    
+
     .container {
         width: 500px;
     }
 
+    .search {
+        width: 200px;
+    }
+
     .main {
-        
+
         &__wrapper {
             flex-wrap: wrap;
         }
@@ -856,10 +824,6 @@ body {
         &__pepper1-bg {
             display: none;
         }
-    }
-
-    .menu {
-        display: none;
     }
 
     .ingredient {
