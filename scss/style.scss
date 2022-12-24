@@ -826,3 +826,55 @@ body {
         }
     }
 }
+
+@media (max-width: 767px) {
+    
+    .container {
+        width: 500px;
+    }
+
+    .main {
+        
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__content {
+            width: 100%;
+            order: 1;
+            margin-top: 50px;
+        }
+
+        &__buttons {
+            flex-direction: row;
+        }
+
+        &__image {
+            height: 360px;
+        }
+
+        &__pepper1-bg {
+            display: none;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .ingredient {
+        flex-direction: row;
+        width: 150px;
+    }
+
+    .other {
+
+        &__wrapper {
+            padding: 20px 50px;
+        }
+
+        &__list {
+            width: 80%;
+        }
+    }
+}

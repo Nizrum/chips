@@ -829,3 +829,39 @@ body {
     overflow: hidden;
   }
 }
+
+@media (max-width: 767px) {
+  .container {
+    width: 500px;
+  }
+  .main__wrapper {
+    flex-wrap: wrap;
+  }
+  .main__content {
+    width: 100%;
+    order: 1;
+    margin-top: 50px;
+  }
+  .main__buttons {
+    flex-direction: row;
+  }
+  .main__image {
+    height: 360px;
+  }
+  .main__pepper1-bg {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .ingredient {
+    flex-direction: row;
+    width: 150px;
+  }
+  .other__wrapper {
+    padding: 20px 50px;
+  }
+  .other__list {
+    width: 80%;
+  }
+}
