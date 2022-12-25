@@ -838,3 +838,39 @@ body {
     width: 80%;
   }
 }
+
+@media (max-width: 575px) {
+  .container {
+    width: 90%;
+  }
+  .header__cart-button {
+    margin-right: 12px;
+  }
+  .logo__image {
+    width: 100px;
+  }
+  .search {
+    width: 180px;
+  }
+  .search__input {
+    padding: 10px 45px 10px 20px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .search__button {
+    right: 10px;
+  }
+  .main__image {
+    height: 400px;
+  }
+  .ingredient {
+    flex-direction: column-reverse;
+    width: 80px;
+  }
+  .other__wrapper {
+    padding: 20px 30px;
+  }
+  .other__list {
+    width: 85%;
+  }
+}
