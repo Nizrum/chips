@@ -323,6 +323,7 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 1010px;
+        overflow: scroll;
     }
 }
 
@@ -662,14 +663,7 @@ body {
         }
 
         &__list {
-            width: 90%;
-        }
-    }
-
-    .product {
-
-        &:last-child {
-            display: none;
+            width: 85%;
         }
     }
 }
@@ -783,11 +777,6 @@ body {
         &__wrapper {
             padding: 20px 40px;
         }
-
-        &__list {
-            width: 85%;
-            overflow: hidden;
-        }
     }
 }
 
@@ -815,6 +804,10 @@ body {
 
         &__buttons {
             flex-direction: row;
+        }
+
+        &__amount-buttons {
+            margin-bottom: 0;
         }
 
         &__image {
@@ -897,6 +890,85 @@ body {
 
         &__list {
             width: 85%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .search {
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: 12px;
+
+        &__input {
+            display: none;
+        }
+
+        &__button {
+            right: 0;
+        }
+    }
+
+    .main {
+
+        &__title {
+            font-size: 40px;
+            line-height: 54px;
+        }
+
+        &__buttons {
+            flex-direction: column-reverse;
+        }
+
+        &__amount-buttons {
+            margin-bottom: 15px;
+        }
+
+        &__image {
+            height: auto;
+            width: 70%;
+            transform: rotate(-5deg);
+        }
+
+        &__ingredients {
+            width: 25%;
+        }
+    }
+
+    .ingredient {
+        width: 100%;
+        margin-bottom: 30px;
+
+        &__image {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 12px;
+        }
+
+        &__img {
+            height: 32px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+
+    .other {
+
+        &__wrapper {
+            padding: 20px;
+        }
+
+        &__list {
+            width: 100%;
+        }
+
+        &__button {
+            display: none;
         }
     }
 }
