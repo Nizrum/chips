@@ -12,6 +12,11 @@ body {
     justify-content: space-between;
     background-color: #F7EFED;
     font-family: 'Gilroy', sans-serif;
+    transition: all 0.2s;
+
+    &.dark-mode {
+        background-color: #000;
+    }
 }
 
 .container {
@@ -36,6 +41,17 @@ body {
 
     &__cart-button {
         margin-right: 15px;
+
+        path {
+            transition: all 0.2s;
+        }
+
+        &_dark-mode {
+
+            path {
+                fill: #fff;
+            }
+        }
     }
 }
 
@@ -68,6 +84,7 @@ body {
         font-weight: 500;
         font-size: 25px;
         line-height: 30px;
+        transition: all 0.2s;
 
         &::placeholder {
             color: #000;
@@ -81,15 +98,39 @@ body {
     }
 
     &__button {
+        height: 30px;
         background-color: transparent;
         position: absolute;
         top: 50%;
         right: 12px;
         transform: translateY(-50%);
+        transition: all 0.2s;
 
-        img {
+        svg {
             width: 30px;
             height: 30px;
+        }
+
+        path {
+            transition: all 0.2s;
+        }
+    }
+
+    &_dark-mode {
+
+        .search__input {
+            border-color: #fff;
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
+
+        .search__button {
+
+            path {
+                fill: #fff;
+            }
         }
     }
 }
@@ -115,6 +156,11 @@ body {
         line-height: 99px;
         text-transform: uppercase;
         margin-bottom: 5px;
+        transition: all 0.2s;
+
+        &_dark-mode {
+            color: #fff;
+        }
     }
 
     &__subtitle {
@@ -239,6 +285,14 @@ body {
             color: #000;
         }
     }
+
+    &_dark-mode {
+        background-color: #fff;
+
+        .add-to-cart-button__text {
+            color: #000;
+        }
+    }
 }
 
 .change-amount-button {
@@ -256,6 +310,7 @@ body {
     padding: 8px;
     border: 1px solid #ffd154;
     border-radius: 50%;
+    transition: all 0.2s;
 
     &__inner {
         width: 58px;
@@ -266,6 +321,10 @@ body {
         align-items: center;
         justify-content: center;
         font-size: 30px;
+    }
+
+    &_dark-mode {
+        border: none;
     }
 }
 
@@ -280,6 +339,11 @@ body {
         font-size: 20px;
         line-height: 24px;
         text-transform: uppercase;
+        transition: all 0.2s;
+
+        &_dark-mode {
+            color: #fff;
+        }
     }
 
     &__image {
@@ -339,12 +403,17 @@ body {
     &__text {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         flex-wrap: wrap;
         padding: 30px 8px 30px 44px;
         background-color: #fff;
         border-radius: 20px;
         transform: translateX(-40px);
+        transition: all 0.2s;
+
+        &_dark-mode {
+            background-color: #000;
+            color: #fff;
+        }
     }
 
     &__name {
@@ -361,6 +430,7 @@ body {
         font-size: 24px;
         line-height: 30px;
         text-transform: uppercase;
+        margin-right: 20px;
     }
 
     &__button {
@@ -525,6 +595,23 @@ body {
 
     &_active {
         display: flex;
+    }
+
+    &_dark-mode {
+
+        .cart__wrapper {
+            background-color: #000;
+            color: #fff;
+            box-shadow: 0px 10px 50px 10px rgba(255, 255, 255, 0.25);
+        }
+
+        .cart__close-button {
+            color: #fff;
+        }
+
+        .cart__overlay {
+            background-color: #000;
+        }
     }
 }
 
