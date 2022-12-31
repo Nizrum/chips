@@ -357,12 +357,26 @@ body {
         justify-content: center;
         flex-shrink: 0;
 
-        &_corn {
+        &_corn,
+        &_potato {
             background-color: #d51037;
         }
 
-        &_spices {
+        &_spices,
+        &_chaat {
             background-color: #FDB339;
+        }
+
+        &_salt {
+            background-color: #30c1ed;
+        }
+
+        &_pudina {
+            background-color: #2109d6;
+        }
+
+        &_cream {
+            background-color: #fff;
         }
     }
 
@@ -386,7 +400,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 1010px;
+        width: 100%;
         overflow: scroll;
     }
 }
@@ -401,6 +415,7 @@ body {
     }
 
     &__text {
+        width: 220px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -613,6 +628,10 @@ body {
             background-color: #000;
         }
     }
+
+    &_active {
+        display: flex;
+    }
 }
 
 @media (max-width: 1439px) {
@@ -701,14 +720,6 @@ body {
         &__image {
             width: 50px;
             height: 50px;
-        }
-    }
-
-    .product {
-
-        &__text {
-            width: 220px;
-            transform: translateX(-40px);
         }
     }
 }
@@ -1098,7 +1109,7 @@ body {
 }
 
 @media (max-width: 480px) {
-    
+
     .search {
         width: 30px;
         height: 30px;

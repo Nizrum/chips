@@ -455,12 +455,24 @@ body.dark-mode {
   flex-shrink: 0;
 }
 
-.ingredient__image_corn {
+.ingredient__image_corn, .ingredient__image_potato {
   background-color: #d51037;
 }
 
-.ingredient__image_spices {
+.ingredient__image_spices, .ingredient__image_chaat {
   background-color: #FDB339;
+}
+
+.ingredient__image_salt {
+  background-color: #30c1ed;
+}
+
+.ingredient__image_pudina {
+  background-color: #2109d6;
+}
+
+.ingredient__image_cream {
+  background-color: #fff;
 }
 
 .ingredient__img {
@@ -480,7 +492,7 @@ body.dark-mode {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1010px;
+  width: 100%;
   overflow: scroll;
 }
 
@@ -495,6 +507,7 @@ body.dark-mode {
 }
 
 .product__text {
+  width: 220px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -705,6 +718,10 @@ body.dark-mode {
   background-color: #000;
 }
 
+.cart_active {
+  display: flex;
+}
+
 @media (max-width: 1439px) {
   .container {
     width: 1100px;
@@ -766,10 +783,6 @@ body.dark-mode {
   .more-button__image {
     width: 50px;
     height: 50px;
-  }
-  .product__text {
-    width: 220px;
-    transform: translateX(-40px);
   }
 }
 

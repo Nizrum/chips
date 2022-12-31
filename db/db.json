@@ -1,0 +1,52 @@
+{
+    "db": [
+        {
+          "id": "001",
+          "img": "db/images/flamin-hot.png",
+          "name": "Flamin Hot Nachos",
+          "description": "Presenting the Classic Nachos with a Flaming Hot Twist. It will Rock your taste buds with Chilli & Lime.",
+          "price": "10",
+          "ingredients": ["chilli", "corn", "spices"]
+        },
+        {
+          "id": "002",
+          "img": "db/images/chaat-chaska.png",
+          "name": "Chaat Chaska",
+          "description": "Here’s a total brat of a flavour. Known for its spicy yet tangy yet minty yet salty character.",
+          "price": "10",
+          "ingredients": ["chaat", "potato", "pudina"]
+        },
+        {
+          "id": "003",
+          "img": "db/images/masala-masti.png",
+          "name": "Masala Masti",
+          "description": "Pure bliss of spicy Indian masala to shake things up a bit.",
+          "price": "10",
+          "ingredients": ["chilli", "potato", "spices"]
+        },
+        {
+          "id": "004",
+          "img": "db/images/tomato-twist.png",
+          "name": "Tomato Twist",
+          "description": "Give in to the sweet notes of tomato.",
+          "price": "10",
+          "ingredients": ["tomato", "potato", "spices"]
+        },
+        {
+          "id": "005",
+          "img": "db/images/simply-salted.png",
+          "name": "Simply Salted",
+          "description": "Introducing the good old potato wafers sprinkled with iodised salt for a mildly flavoured experience.",
+          "price": "10",
+          "ingredients": ["potato", "salt"]
+        },
+        {
+          "id": "006",
+          "img": "db/images/cream-and-onion.png",
+          "name": "Cream & Onion",
+          "description": "One of the tastiest wafers around that will make you come back for its irresistible fusion of sour cream, herbs and spring onion.",
+          "price": "10",
+          "ingredients": ["onion", "potato", "cream"]
+        }
+      ]
+}

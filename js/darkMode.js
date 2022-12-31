@@ -4,7 +4,6 @@ const body = document.querySelector("body");
 const search = document.querySelector(".search");
 const cartBtn = document.querySelector(".header__cart-button");
 const mainTitle = document.querySelector(".main__title");
-const ingredientTexts = document.querySelectorAll(".ingredient__text");
 const productTexts = document.querySelectorAll(".product__text");
 const amountCounter = document.querySelector(".amount-counter");
 const addButton = document.querySelector(".add-to-cart-button");
@@ -19,7 +18,7 @@ function toggleMode() {
     amountCounter.classList.toggle("amount-counter_dark-mode");
     addButton.classList.toggle("add-to-cart-button_dark-mode");
     cart.classList.toggle("cart_dark-mode");
-    ingredientTexts.forEach((item) => {
+    document.querySelectorAll(".ingredient__text").forEach((item) => {
         item.classList.toggle("ingredient__text_dark-mode");
     });
     productTexts.forEach((item) => {
@@ -29,13 +28,13 @@ function toggleMode() {
 
 darkModeBtn.addEventListener("click", function () {
     toggleMode();
-    localStorage.setItem('darkmode', localStorage.getItem('darkmode') == 'dark' ? 'light' : 'dark');
+    localStorage.setItem("darkmode", localStorage.getItem("darkmode") == "dark" ? "light" : "dark");
 });
 
-if (!localStorage.getItem('darkmode')) {
-    localStorage.setItem('darkmode', 'light');
+if (!localStorage.getItem("darkmode")) {
+    localStorage.setItem("darkmode", "light");
 }
 
-if (localStorage.getItem('darkmode') == 'dark') {
+if (localStorage.getItem("darkmode") == "dark") {
     toggleMode();
 }
