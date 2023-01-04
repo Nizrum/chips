@@ -5,7 +5,6 @@
     const search = document.querySelector(".search");
     const cartBtn = document.querySelector(".header__cart-button");
     const mainTitle = document.querySelector(".main__title");
-    const productTexts = document.querySelectorAll(".product__text");
     const amountCounter = document.querySelector(".amount-counter");
     const addButton = document.querySelector(".add-to-cart-button");
     const cart = document.querySelector(".cart");
@@ -22,7 +21,7 @@
         document.querySelectorAll(".ingredient__text").forEach((item) => {
             item.classList.toggle("ingredient__text_dark-mode");
         });
-        productTexts.forEach((item) => {
+        document.querySelectorAll(".product__text").forEach((item) => {
             item.classList.toggle("product__text_dark-mode");
         });
     }
