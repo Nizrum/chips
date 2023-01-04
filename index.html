@@ -68,11 +68,13 @@
                             <span class="add-to-cart-button__text">Add to cart</span>
                         </button>
                         <div class="main__amount-buttons">
-                            <button class="main__change-amount-button change-amount-button">-</button>
+                            <button
+                                class="main__change-amount-button change-amount-button change-amount-button_minus">-</button>
                             <div class="main__amount-counter amount-counter">
-                                <div class="amount-counter__inner">5</div>
+                                <div class="amount-counter__inner">1</div>
                             </div>
-                            <button class="main__change-amount-button change-amount-button">+</button>
+                            <button
+                                class="main__change-amount-button change-amount-button change-amount-button_plus">+</button>
                         </div>
                     </div>
                 </div>
@@ -146,65 +148,20 @@
                 <button class="cart__close-button">✕</button>
             </div>
             <table class="cart__table">
-                <tr class="cart__headers">
-                    <th class="cart__header">Products</th>
-                    <th class="cart__header">Price</th>
-                    <th class="cart__header">Qty.</th>
-                    <th class="cart__header">Total</th>
-                </tr>
-                <tr class="cart__product">
-                    <td>Crunchex Chilli</td>
-                    <td>₹10</td>
-                    <td>10</td>
-                    <td>₹100</td>
-                    <td>
-                        <button class="cart__remove-button">✕</button>
-                    </td>
-                </tr>
-                <tr class="cart__product">
-                    <td>Crunchex Chilli</td>
-                    <td>₹10</td>
-                    <td>10</td>
-                    <td>₹100</td>
-                    <td>
-                        <button class="cart__remove-button">✕</button>
-                    </td>
-                </tr>
-                <tr class="cart__product">
-                    <td>Crunchex Chilli</td>
-                    <td>₹10</td>
-                    <td>10</td>
-                    <td>₹100</td>
-                    <td>
-                        <button class="cart__remove-button">✕</button>
-                    </td>
-                </tr>
-                <tr class="cart__product">
-                    <td>Crunchex Chilli</td>
-                    <td>₹10</td>
-                    <td>10</td>
-                    <td>₹100</td>
-                    <td>
-                        <button class="cart__remove-button">✕</button>
-                    </td>
-                </tr>
-                <tr class="cart__product">
-                    <td>Crunchex Chilli</td>
-                    <td>₹10</td>
-                    <td>10</td>
-                    <td>₹100</td>
-                    <td>
-                        <button class="cart__remove-button">✕</button>
-                    </td>
-                </tr>
-                <tr class="cart__total">
-                    <td colspan="3">Total</td>
-                    <td>₹500</td>
-                </tr>
+                <thead>
+                    <tr class="cart__headers">
+                        <th class="cart__header">Products</th>
+                        <th class="cart__header">Price</th>
+                        <th class="cart__header">Qty.</th>
+                        <th class="cart__header">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
             </table>
             <form action="#" class="cart__form">
-                <input type="text" class="cart__input" placeholder="Name">
-                <input type="tel" class="cart__input" placeholder="Phone">
+                <input type="text" class="cart__input cart__input_name" placeholder="Name">
+                <input type="tel" class="cart__input cart__input_phone" placeholder="Phone">
                 <button type="submit" class="cart__button">Checkout</button>
             </form>
         </div>

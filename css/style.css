@@ -130,6 +130,10 @@ body.dark-mode {
   background-color: #000;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 1290px;
   margin: 0 auto;

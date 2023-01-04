@@ -17,6 +17,10 @@ body {
     &.dark-mode {
         background-color: #000;
     }
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 .container {
