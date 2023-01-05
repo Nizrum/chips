@@ -496,7 +496,7 @@ body.no-scroll {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 89%;
   overflow: scroll;
 }
 
@@ -782,7 +782,7 @@ body.no-scroll {
     padding: 20px 50px;
   }
   .other__list {
-    width: 99%;
+    width: 90%;
   }
   .more-button__image {
     width: 50px;
