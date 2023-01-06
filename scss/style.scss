@@ -120,6 +120,24 @@ body {
         }
     }
 
+    &__list {
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        top: 100%;
+        width: 100%;
+        height: auto;
+        padding: 0px 29px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    &__item {
+        background-color: #fff;
+        padding: 10px;
+        cursor: pointer;
+    }
+
     &_dark-mode {
 
         .search__input {
@@ -135,6 +153,11 @@ body {
             path {
                 fill: #fff;
             }
+        }
+
+        .search__item {
+            background-color: #000;
+            color: #fff;
         }
     }
 }
@@ -809,6 +832,12 @@ body {
             font-size: 20px;
             line-height: 22px;
         }
+
+        &__list {
+            font-size: 20px;
+            line-height: 22px;
+            padding: 0px 25px;
+        }
     }
 
     .main {
@@ -1058,6 +1087,12 @@ body {
             line-height: 20px;
         }
 
+        &__list {
+            font-size: 18px;
+            line-height: 20px;
+            padding: 0px 22px;
+        }
+
         &__button {
             right: 10px;
         }
@@ -1115,13 +1150,25 @@ body {
 @media (max-width: 480px) {
 
     .search {
-        width: 30px;
-        height: 30px;
         margin-left: auto;
         margin-right: 12px;
 
         &__input {
-            display: none;
+            visibility: hidden;
+            position: absolute;
+            right: 0;
+            top: 24px;
+            padding: 10px 20px;
+            transition: visibility 0s;
+
+            &_visible {
+                visibility: visible;
+            }
+        }
+
+        &__list {
+            top: 68px;
+            padding: 0px 9px;
         }
 
         &__button {
