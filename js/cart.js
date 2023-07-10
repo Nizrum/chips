@@ -87,6 +87,7 @@ const sendForm = () => {
 cartBtn.addEventListener("click", () => {
     body.classList.toggle("no-scroll");
     cart.classList.toggle("cart_active");
+    cartInputName.focus();
 });
 
 closeBtn.addEventListener("click", () => {

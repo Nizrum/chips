@@ -23,5 +23,4 @@ searchList.addEventListener("click", (event) => {
 
 searchBtn.addEventListener("click", () => {
     searchInput.classList.toggle('search__input_visible');
-    console.log('asdasd');
 });
